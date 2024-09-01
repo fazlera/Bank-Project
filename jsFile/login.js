@@ -7,8 +7,8 @@ document.getElementById('submit-btn').addEventListener('click',function(){
     
     // step: get the password element
 
-    const userPassword = document.getElementById('user-password')
-    const password = userPassword.value
+    const userPassword = document.getElementById('user-password');
+    const password = userPassword.value;
     
     // step: 4 check is email or password are verified 
 

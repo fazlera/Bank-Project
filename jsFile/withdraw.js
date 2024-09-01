@@ -1,21 +1,21 @@
 
 document.getElementById('withdraw-btn').addEventListener('click',function(){
     
-    const withdrawInputField = document.getElementById('withdraw-value')
+    const withdrawInputField = document.getElementById('withdraw-value');
     const newWithdrawAmountString = withdrawInputField.value;
-    const newWithdrawAmount = parseFloat(newWithdrawAmountString)
+    const newWithdrawAmount = parseFloat(newWithdrawAmountString);
     
-    const withdrawTotalValue = document.getElementById('withdraw-total')
+    const withdrawTotalValue = document.getElementById('withdraw-total');
     const previousWithdrawAmountString = withdrawTotalValue.innerText;
-    const previousWithdrawAmount = parseFloat(previousWithdrawAmountString)
+    const previousWithdrawAmount = parseFloat(previousWithdrawAmountString);
     const currentWithDraw = previousWithdrawAmount + newWithdrawAmount;
 
-    const balanceTotal = document.getElementById('balance-total')
-    const previousBalanceTotalString = balanceTotal.innerText
-    const newBalanceTotal = parseFloat(previousBalanceTotalString)
-    if(newBalanceTotal == 0){
+    const balanceTotal = document.getElementById('balance-total');
+    const previousBalanceTotalString = balanceTotal.innerText;
+    const newBalanceTotal = parseFloat(previousBalanceTotalString);
 
-        return withdrawInputField.value = '', alert('not balance')
+    if(newBalanceTotal == 0){
+        return withdrawInputField.value = '', alert('not balance');
      }
 
     const withdrawCurrentBalance = newBalanceTotal - newWithdrawAmount  ;
