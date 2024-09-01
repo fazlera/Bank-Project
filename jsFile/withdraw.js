@@ -14,7 +14,8 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
     const previousBalanceTotalString = balanceTotal.innerText
     const newBalanceTotal = parseFloat(previousBalanceTotalString)
     if(newBalanceTotal == 0){
-        return alert('not balance')
+
+        return withdrawInputField.value = '', alert('not balance')
      }
 
     const withdrawCurrentBalance = newBalanceTotal - newWithdrawAmount  ;
